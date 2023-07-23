@@ -4,7 +4,7 @@ from . import views
 
 
 urlpatterns = [
-    path('',views.machine),
+    path('machine/',views.machine),
     path('lrandom/',views.random),
     path('ldtree/',views.dtree),
     path('lknn/',views.knn),

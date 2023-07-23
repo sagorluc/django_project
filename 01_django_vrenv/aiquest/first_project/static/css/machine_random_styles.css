@@ -1,3 +1,7 @@
 body{
-    background-color: green;
+    background-color: blue;
+}
+form{
+    text-align: center;
+    margin-left: 10px;
 }
