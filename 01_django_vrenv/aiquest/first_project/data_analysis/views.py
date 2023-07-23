@@ -5,4 +5,4 @@ from django.http import HttpResponse as hr
 def data_ana(request):
     #return hr('<h1>this is data_analysis app</h1>')
     
-    return render(request,'data_analysis.html')
+    return render(request,'data_analysis/data_analysis.html')
