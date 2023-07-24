@@ -1,11 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
-</head>
-<body>
-    <h1>This is about our details page from html</h1>
-</body>
-</html>
+{% extends 'inherit_common_code/base.html' %}
+
+{% block any %}About{% endblock any %} <!-- title -->
+
+<!-- alart -->
+{% block alart %}This is About page{% endblock alart %}
+
+{% block parag %}This is the second alart of {% endblock parag %} 
+{% block link %}About{% endblock link %}
+{% block parag1 %} Page {% endblock parag1 %}

@@ -1,0 +1,13 @@
+table{
+    border: 2px solid;
+    align-items: center;
+    text-align: center;
+    background-color: aquamarine;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+th,td{
+    border: 2px solid blue;
+    padding: 5px;
+}

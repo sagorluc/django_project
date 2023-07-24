@@ -1,50 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>K-Nearest Neibors</title>
-</head>
-<body>
-  <h1>this is KNN page</h1>  
+{% extends 'inherit_common_code/base.html' %}
 
-  <table width="600" border="2px" align="center">
-    <tr>
-      <th>Teacher's name</th>
-      <th>Course name</th>
-      <th>Subject</th>
-      <th>Course Duration</th>
-      <th>Total Seat</th>
-    </tr>
-    <tr align="center">
-      <td>Sagor Ahmed</td>
-      <td>Phitron</td>
-      <td>Deep Learning</td>
-      <td>14 Month</td>
-      <td>1250</td>
-    </tr>
-    <tr align="center">
-      <td>Ismail hossen</td>
-      <td>Phitron</td>
-      <td>Machine Learning</td>
-      <td>10 Month</td>
-      <td>30</td>
-    </tr>
-    <tr align="center">
-      <td>Saiful Islam</td>
-      <td>Phitron</td>
-      <td>Data Science</td>
-      <td>6 Month</td>
-      <td>950</td>
-    </tr>
-    <tr align="center">
-      <td>Jakir Uzzaman</td>
-      <td>Phitron</td>
-      <td>Data Analysis</td>
-      <td>8 Month</td>
-      <td>120</td>
-    </tr>
-  </table>
-  
-</body>
-</html>
+{% block any %}Knn{% endblock any %} <!-- title -->
+
+<!-- alart -->
+{% block alart %}This is Knn page{% endblock alart %}
+
+{% block parag %}This is the second alart of {% endblock parag %} 
+{% block link %}Knn{% endblock link %}
+{% block parag1 %} Page {% endblock parag1 %}

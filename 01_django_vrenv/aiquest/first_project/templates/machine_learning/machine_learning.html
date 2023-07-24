@@ -1,43 +1,10 @@
-<!DOCTYPE html>
-{% load static %}
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'css/machine_styles.css'%}">
-    <title>Machine Learning</title>
-</head>
-<body>
-    <!-- use variable -->
-    <h1>This is {{what}} page  from html </h1>
-    <h2>Course: {{course}} </h2>
-    <h2>Total Class: {{tc}} </h2>
-    <h2>Seat: {{st}} </h2>
-    <h2>Course Duration: {{cd}} </h2>
+{% extends 'inherit_common_code/base.html' %}
 
-    <!-- use filter -->
-    <h3>upper case:  {{course | upper}} </h3>
-    <h3>lower case: {{course | lower}} </h3>
-    <h3>first letter capital: {{course | capfirst}} </h3>
-    <h3>length of full sentence: {{course | length}} </h3>
+{% block any %}Machine Learning{% endblock any %} <!-- title -->
 
-    <!-- html tag -->
+<!-- alart -->
+{% block alart %}This is Machine Learning page{% endblock alart %}
 
-    <!-- using for loop -->
-    {% for i in teacher reversed %}
-    <h3>{{forloop.counter}} name: {{i}}</h3> 
-    <br>   
-    {% endfor %}
-
-    <!-- using Condition -->
-    {% if st == 40  %}
-    <h2>Condition True</h2>
-    {% elif st == 52 %}
-    <h1>this is elif part</h1>
-    {% else %}
-    <h1>Condition False</h1>
-    {% endif %}
-
-
-</body>
-</html>
+{% block parag %}This is the second alart of {% endblock parag %} 
+{% block link %}Machine Learning{% endblock link %}
+{% block parag1 %} Page {% endblock parag1 %}

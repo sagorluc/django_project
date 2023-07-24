@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/teacher.css' %}">
+    <title>Teacher Info</title>
+</head>
+<body>
+    <!-- set condition -->
+    {% if teac %} <!-- {{teac}} is a variable -->
+    <table>
+        <tr>
+            <th>Serial Number</th>
+            <th>Teachar ID</th>
+            <th>Teachar Name</th>
+            <th>Teachar Email</th>
+        </tr>
+
+        <!-- show all row from database -->
+        {% for tc in teac  %}
+        <tr>          
+             <td>{{tc.id}}</td>
+             <td>{{tc.t_id}}</td>
+             <td>{{tc.t_name}}</td>
+             <td>{{tc.t_email}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    {% else %}
+    <h1>Empty Database</h1>
+
+    {% endif %}
+</body>
+</html>

@@ -27,5 +27,7 @@ urlpatterns = [
     path('mblog/',include('blogs.urls')),
     path('mdta/', include('data_analysis.urls')),
     path('mabout/', include('about_us.urls')),
+    path('mabt/', include('about_us.urls')),
+    
 
 ]

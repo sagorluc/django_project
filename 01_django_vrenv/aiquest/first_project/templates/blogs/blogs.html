@@ -1,14 +1,10 @@
-<!DOCTYPE html>
-{% load static %} 
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'css/blog_styles.css' %}"/>
-    <title>Blogs</title>
-</head>
-<body>
-    <h1>This is blogs page from html</h1>
-    <img src="{% static 'images/bird.png'%}" alt="bird picture">
-</body>
-</html>
+{% extends 'inherit_common_code/base.html' %}
+
+{% block any %}Blogs{% endblock any %} <!-- title -->
+
+<!-- alart -->
+{% block alart %}This is Blogs page{% endblock alart %}
+
+{% block parag %}This is the second alart of {% endblock parag %} 
+{% block link %}Blogs{% endblock link %}
+{% block parag1 %} Page {% endblock parag1 %}

@@ -1,33 +1,10 @@
-<!DOCTYPE html>
-{% load static %}
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'css/machine_random_styles.css' %}">
-    <title>Random Forest</title>
-</head>
-<body>
-  <h1>this is random forest page</h1>  
+{% extends 'inherit_common_code/base.html' %}
 
-  <form action="">
-    <input type="text" name="" id="" placeholder="Enter your name.."><br><br>
-    <input type="email" name="" id="" placeholder='example@gmail.com'><br><br>
-    <input type="password" name="" id="" placeholder='Enter password'><br><br>
-    <input type="file" name="" id=""><br><br>
-    <input type="datetime-local" name="" id=""><br><br>
-    <input type="submit" value="Submit">
-    <input type="reset" value="Reset"><br><br>
+{% block any %}Rnadom Forest{% endblock any %} <!-- title -->
 
-    <input type="radio" name="gender" id="">Male
-    <input type="radio" name="gender" id="">Female
-    <input type="radio" name="gender" id="">Others <br><br>
+<!-- alart -->
+{% block alart %}This is Rnadom Forest page{% endblock alart %}
 
-    <input type="checkbox" name="" id="">Data Science
-    <input type="checkbox" name="" id="">Machine Learning
-    <input type="checkbox" name="" id="">Deep Learning
-    <input type="checkbox" name="" id="">Data Analysis
-
-  </form>
-</body>
-</html>
+{% block parag %}This is the second alart of {% endblock parag %} 
+{% block link %}Rnadom Forest{% endblock link %}
+{% block parag1 %} Page {% endblock parag1 %}
