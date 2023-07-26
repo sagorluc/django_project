@@ -38,9 +38,17 @@
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="{% url 'form' %}" target="_blank">Forms</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{% url 'data' %}">Data Analysis</a>
-        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" srole="button" data-bs-toggle="dropdown" aria-expanded="false">Data Analysis</a>
+          
+          <ul class="dropdown-menu">
+
+            <a class="dropdown-item"href="{% url 'data' %}">Data Analysis</a>
+            <li><hr class="dropdown-divider"></li>
+            <a class="dropdown-item"href="{% url 'class_base' %}">Class Base</a>
+            
+          </ul>
       
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" srole="button" data-bs-toggle="dropdown" aria-expanded="false">Deep Learning</a>
@@ -48,6 +56,10 @@
           <ul class="dropdown-menu">
 
             <a class="dropdown-item" href="/mdl/ldpl/">Deep Learning</a>
+
+            <li><hr class="dropdown-divider"></li>
+
+            <a class="dropdown-item" href="/mdl/lauth/" target="_blank">Author Registration</a>
 
             <li><hr class="dropdown-divider"></li>
 

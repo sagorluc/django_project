@@ -8,6 +8,14 @@ def blog_first(request):
     return render(request,'blogs/blogs.html') 
 
 def show_forms_data(request):
-    fm = Teacher_registration()
-    fm.order_fields(field_order = ['email','first_name', 'last_name']) # order maintains
+    if request.method == 'POST':
+        fm = Teacher_registration(request.POST)
+        if fm.is_valid():
+            print(fm.cleaned_data['password'])
+            print(fm.cleaned_data['repassword'])
+    else:
+        fm = Teacher_registration()
+        print('This is get area')
+
+    #fm.order_fields(field_order = ['email','first_name', 'last_name']) # order maintains
     return render(request,'blogs/forms.html', {'form': fm})

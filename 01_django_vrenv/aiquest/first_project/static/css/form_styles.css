@@ -1,0 +1,32 @@
+form{
+    border: 5px solid blue;
+    font: 1em sans-serif;
+    padding: 10px 0px 10px 50px;
+    
+}
+
+label{
+    font-size: 25px;
+    color: brown;
+}
+
+input{
+    height: 20px;
+    width: 200px;
+    background-color: gainsboro;
+    padding: 10px;
+    font-weight: 600;
+    color: red;
+    display: flex;
+    
+
+}
+#id_text_area{
+    background-color: aquamarine;
+}
+
+#sure{
+    background-color: green;
+    padding: 10px 0 25px 0;
+    display: inline-block;
+}

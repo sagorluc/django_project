@@ -1,17 +1,32 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/form_styles.css' %}">
     <title>Forms</title>
 </head>
 <body>
-    <form action="">
+    <form action="" method='POST' novalidate> {% csrf_token %} <!-- csrf for extra security of wibsite -->
         <table>
-            {{form}}
+            {{form.as_p}}
         </table>
-        <input type="submit" value="Submit">
-        <input type="reset" value="Reset">
+        <br>
+        <input type="submit" value="Submit" id="sure">
+        <input type="reset" value="Reset" id="sure">
+        <br><br>
+
+        <!-- to change the label-->
+        {% for field in form %}
+        {{field.label_tag}} <br>
+        {% endfor %}
+        <br><br>
+        <!--without using loop to change label-->
+        {{form.first_name.label_tag}} <br>
+        {{form.last_name.label_tag}} <br>
+        {{form.email.label_tag}} <br>
+
     </form>
 </body>
 </html>
