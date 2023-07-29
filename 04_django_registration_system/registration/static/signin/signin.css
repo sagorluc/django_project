@@ -1,0 +1,42 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container {
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: aqua;
+    border-radius: 5px;
+}
+
+.centered-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#signin{
+    color: green;
+    text-align: center;
+    margin: 0px 0px 10px 60px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.submit-signin{
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border: 1px solid;
+    width: 200px;
+    border-radius: 5px;
+    margin: 0px 0px 20px 0px;
+
+}
