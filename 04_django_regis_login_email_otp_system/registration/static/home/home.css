@@ -1,0 +1,16 @@
+/* form{
+    background-color: aqua;
+    align-items: center;    
+} */
+
+.submit-logout{
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border: 1px solid;
+    width: 200px;
+    border-radius: 5px;
+    margin: 0px 0px 20px 0px;
+
+}
