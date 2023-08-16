@@ -3,12 +3,12 @@ from rest_framework import serializers
 
 class RegistrationSerializer(serializers.ModelSerializer):
     repassword = serializers.CharField(style= {"input_type": "password"}, write_only = 'True')
-    
-    model = User
-    fields = ['username', 'email', 'password', 'repassword']
-    extra_kwargs = {
-        'password': {'write_only': True}
-    }
+    class Meta:  
+        model = User
+        fields = ['username', 'email', 'password', 'repassword']
+        extra_kwargs = {
+            'password': {'write_only': True}
+        }
     
     # Get data
     def save(self):
